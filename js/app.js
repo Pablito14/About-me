@@ -1,56 +1,80 @@
 "use strict";
 
-var q1, q2, q3, q4, q5, wrong;
+var a1, a2, a3, a4, a5, wrong;
 
 wrong = ("Its a yes or no question, bruh. Type y or n");
 
-q1 = prompt("HEY, are you a stressed out developer?! Type y or n to answer!")
-if(q1.toLowerCase() === "y")
+a1 = prompt("HEY, are you a stressed out developer?! Type yes or no to answer!")
+a1.toLowerCase()
+
+if(a1 === "y" || a1 === "yes")
 {
     alert("Good, you should be. >:(");
-    console.log("question 1: " , q1);
+    console.log("question 1: " , a1);
 }
-else if(q1.toLowerCase() === "n")
+else if(a1 === "n" || a1 === "no")
 {
     alert("Shifu please teach me <3");
-    console.log("question 1: " , q1);
+    console.log("question 1: " , a1);
 }
 else{ alert(wrong)};
 
-q2 = prompt("Do you want to bang your head onto the table ")
-if(q2.toLocaleLowerCase() === "y"){
-    alert("Good, go ahead and start. Harder. BREAK THE TABLE. RIOT. REEEEEEEEEEEEEEE");
-    console.log("question 2: " , q2);
-}else if (q2.toLowerCase() === "n"){
-    alert("You may not like it, but you are what peak performance looks like");
-    console.log("question 2: " , q2);
-} else{
-    alert(wrong);
+a2 = prompt("Have you had any coding experiance?")
+a2.toLowerCase()
+
+if(a2 === "y" || a2 === "yes")
+{
+    alert("Wowie, thats fantastic. I have some experiance in Java!");
+    console.log("question 2: " , a2);
 }
+else if(a2 === "n" || a2 === "no")
+{
+    alert("Well prepare for a world of hurt then buddy.");
+    console.log("question 2: " , a2);
+}
+else{ alert(wrong)};
 
-q3 = prompt("Are you tired?")
-if(q3.toLowerCase() === "y"){
-    alert("same");
-    console.log("question 3: " , q3);
-}else if(q3.toLowerCase() === "n"){
-    alert("You were responsible!");
-    console.log("question 3: " , q3);
-}else{ alert(wrong)};
+a3 = prompt("Are you scared to look dumb and ask for help?")
+a3.toLowerCase()
 
-q4 = prompt("Are you hungry ")
-if(q4.toLowerCase() === "y"){
-    alert("Go get some food.");
-    console.log("question 4: " , q4);
-}else if(q4.toLowerCase() === "n"){
-    alert("Not eveyone can be that fortunate >:(");
-    console.log("question 4: " , q4);
-}else{ alert(wrong)};
+if(a3 === "y" || a3 === "yes")
+{
+    alert("That is normal, I promise you I am right there with ya!");
+    console.log("question 3: " , a3);
+}
+else if(a3 === "n" || a3 === "no")
+{
+    alert("Well you are just exuberating confidence");
+    console.log("question 3: " , a3);
+}
+else{ alert(wrong)};
 
-q5 = prompt("Do you ever feel like breaking down? Do you ever feel out of place? Like somehow you just don't belong and no one understands you? Do you ever wanna run away? Do you lock yourself in your room? With the radio on turned up so loud that no one hears you screaming")
-if(q5.toLowerCase() === "y"){
-    alert("No you don't know what it's like when nothing feels all right. You don't know what it's like to be like me, to be hurt, to feel lost, to be left out in the dark, to be kicked when you're down, to feel like you've been pushed around, to be on the edge of breaking down, and no one's there to save you. No you don't know what it's like. Welcome to my life");
-    console.log("question 5: " , q5);
-}else if(q5.toLowerCase() === "n"){
-    alert("GO LISTEN TO SIMPLE PLAN'S: WELCOME TO MY LIFE");
-    console.log("question 5: " , q5);
-}else{ alert(wrong)};
+a4 = prompt("Are you getting enough rest?")
+a4.toLowerCase()
+
+if(a4 === "y" || a4 === "yes")
+{
+    alert("Very jealous :S");
+    console.log("question 4: " , a4);
+}
+else if(a4 === "n" || a4 === "no")
+{
+    alert("High five... and naps");
+    console.log("question 4: " , a4);
+}
+else{ alert(wrong)};
+
+a5 = prompt("Do you enjoy art?")
+a5.toLowerCase()
+
+if(a5 === "y" || a5 === "yes")
+{
+    alert("I love every form of art!");
+    console.log("question 5: " , a5);
+}
+else if(a5 === "n" || a5 === "no")
+{
+    alert("Wat. Why? How could anyone not... Um, I gottat go.");
+    console.log("question 5: " , a5);
+}
+else{ alert(wrong)};

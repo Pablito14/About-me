@@ -89,22 +89,25 @@ function q4() {
 }
 q4();
 
-a5 = prompt('Do you enjoy art?');
-a5.toLowerCase();
+function q5() {
+  a5 = prompt('Do you enjoy art?');
+  a5.toLowerCase();
 
-if(a5 === 'y'|| a5 === 'yes')
-{
-  alert('I love every form of art!');
-  correct++;
-  console.log('The user\'s answer to question 5: ' , a5);
+  if(a5 === 'y'|| a5 === 'yes')
+  {
+    alert('I love every form of art!');
+    correct++;
+    console.log('The user\'s answer to question 5: ' , a5);
+  }
+  else if(a5 === 'n' || a5 === 'no')
+  {
+    alert('Wat. Why? How could anyone not... Um, I gottat go.');
+    incorrect++;
+    console.log('The user\'s answer to question 5: ' , a5);
+  }
+  else{ alert(wrong);}
 }
-else if(a5 === 'n' || a5 === 'no')
-{
-  alert('Wat. Why? How could anyone not... Um, I gottat go.');
-  incorrect++;
-  console.log('The user\'s answer to question 5: ' , a5);
-}
-else{ alert(wrong);}
+q5();
 
 /*
 a6 = prompt('What is my favorite number? I\'ll give you a hint its from 1 to 100!');

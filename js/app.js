@@ -69,22 +69,25 @@ function q3() {
 }
 q3();
 
-a4 = prompt('Are you getting enough rest?');
-a4.toLowerCase();
+function q4() {
+  a4 = prompt('Are you getting enough rest?');
+  a4.toLowerCase();
 
-if(a4 === 'y'|| a4 === 'yes')
-{
-  alert('Very jealous :S');
-  incorrect++;
-  console.log('The user\'s answer to question 4: ' , a4);
+  if(a4 === 'y'|| a4 === 'yes')
+  {
+    alert('Very jealous :S');
+    incorrect++;
+    console.log('The user\'s answer to question 4: ' , a4);
+  }
+  else if(a4 === 'n' || a4 === 'no')
+  {
+    alert('High five... and naps');
+    correct++;
+    console.log('The user\'s answer to question 4: ' , a4);
+  }
+  else{ alert(wrong);}
 }
-else if(a4 === 'n' || a4 === 'no')
-{
-  alert('High five... and naps');
-  correct++;
-  console.log('The user\'s answer to question 4: ' , a4);
-}
-else{ alert(wrong);}
+q4();
 
 a5 = prompt('Do you enjoy art?');
 a5.toLowerCase();

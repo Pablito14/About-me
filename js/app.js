@@ -9,22 +9,26 @@ console.log('Correct and incorrect will track the number of answers and their va
 console.log('correct: ' + correct);
 console.log('incorrect: ' + incorrect);
 
-a1 = prompt('HEY, are you a stressed out developer?!');
-a1.toLowerCase();
+function q1() {
+  a1 = prompt('HEY, are you a stressed out developer?!');
+  a1.toLowerCase();
 
-if(a1 === 'y' || a1 === 'yes')
-{
-  alert('Good, you should be. >:(');
-  correct++;
-  console.log('The user\'s answer to question 1: ' , a1);
+  if(a1 === 'y' || a1 === 'yes')
+  {
+    alert('Good, you should be. >:(');
+    correct++;
+    console.log('The user\'s answer to question 1: ' , a1);
+  }
+  else if(a1 === 'n' || a1 === 'no')
+  {
+    alert('Shifu please teach me <3');
+    incorrect++;
+    console.log('The user\'s answer to question 1: ' , a1);
+  }
+  else{ alert(wrong);}
 }
-else if(a1 === 'n' || a1 === 'no')
-{
-  alert('Shifu please teach me <3');
-  incorrect++;
-  console.log('The user\'s answer to question 1: ' , a1);
-}
-else{ alert(wrong);}
+q1();
+
 
 a2 = prompt('Have you had any coding experiance?');
 a2.toLowerCase();
@@ -94,6 +98,7 @@ else if(a5 === 'n' || a5 === 'no')
 }
 else{ alert(wrong);}
 
+/*
 a6 = prompt('What is my favorite number? I\'ll give you a hint its from 1 to 100!');
 
 if(a6 === 60)
@@ -110,7 +115,7 @@ else if(a6 )
 }
 else{ alert(wrong);}
 
-/*a7 = prompt('Where have I been?');
+a7 = prompt('Where have I been?');
 
 
 if(a7 === )

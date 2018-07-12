@@ -1,6 +1,7 @@
 'use strict';
 
 var a1, a2, a3, a4, a5, /*a6, a7,*/ wrong, correct, incorrect;
+//TEST
 
 wrong = ('Its a yes or no question. Type y or n. You could even type yes or no. Just not what you did. ');
 correct = 0;

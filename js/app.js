@@ -29,23 +29,25 @@ function q1() {
 }
 q1();
 
+function q2() {
+  a2 = prompt('Have you had any coding experiance?');
+  a2.toLowerCase();
 
-a2 = prompt('Have you had any coding experiance?');
-a2.toLowerCase();
-
-if(a2 === 'y'|| a2 === 'yes')
-{
-  alert('Wowie, thats fantastic. I have some experiance in Java!');
-  correct++;
-  console.log('The user\'s answer to question 2: ' , a2);
+  if(a2 === 'y'|| a2 === 'yes')
+  {
+    alert('Wowie, thats fantastic. I have some experiance in Java!');
+    correct++;
+    console.log('The user\'s answer to question 2: ' , a2);
+  }
+  else if(a2 === 'n' || a2 === 'no')
+  {
+    alert('Well prepare for a world of hurt then buddy.');
+    incorrect++;
+    console.log('The user\'s answer to question 2: ' , a2);
+  }
+  else{ alert(wrong);}
 }
-else if(a2 === 'n' || a2 === 'no')
-{
-  alert('Well prepare for a world of hurt then buddy.');
-  incorrect++;
-  console.log('The user\'s answer to question 2: ' , a2);
-}
-else{ alert(wrong);}
+q2();
 
 a3 = prompt('Are you scared to look dumb and ask for help?');
 a3.toLowerCase();

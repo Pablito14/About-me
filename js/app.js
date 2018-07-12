@@ -110,24 +110,26 @@ function q5() {
 q5();
 
 /*
-a6 = prompt('What is my favorite number? I\'ll give you a hint its from 1 to 100!');
+function q6() {
+  a6 = prompt('What is my favorite number? I\'ll give you a hint its from 1 to 100!');
 
-if(a6 === 60)
-{
-  alert('Dammmmmmmmn, how\'d you guess it right?');
+  if(a6 === 60)
+  {
+    alert('Dammmmmmmmn, how\'d you guess it right?');
 
-  console.log();
+    console.log();
+  }
+  else if(a6 )
+  {
+    alert('Wat. Why? How could anyone not... Um, I gottat go.');
+    incorrect++;
+    console.log('The user\'s answer to question 6: ' , a6);
+  }
+  else{ alert(wrong);}
 }
-else if(a6 )
-{
-  alert('Wat. Why? How could anyone not... Um, I gottat go.');
-  incorrect++;
-  console.log('The user\'s answer to question 5: ' , a6);
-}
-else{ alert(wrong);}
+q6();
 
 a7 = prompt('Where have I been?');
-
 
 if(a7 === )
 {

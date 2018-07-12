@@ -1,6 +1,6 @@
 'use strict';
 
-var a1, a2, a3, a4, a5, wrong, correct, incorrect;
+var a1, a2, a3, a4, a5, a6, /*a7,*/ wrong, correct, incorrect;
 
 wrong = ('Its a yes or no question, bruh. Type y or n');
 correct = 0;
@@ -93,6 +93,39 @@ else if(a5 === 'n' || a5 === 'no')
   console.log('The user\'s answer to question 5: ' , a5);
 }
 else{ alert(wrong);}
+
+a6 = prompt('What is my favorite number? I\'ll give you a hint its from 1 to 100!');
+
+if(a6 === 60)
+{
+  alert('Dammmmmmmmn, how\'d you guess it right?');
+
+  console.log();
+}
+else if(a6 )
+{
+  alert('Wat. Why? How could anyone not... Um, I gottat go.');
+  incorrect++;
+  console.log('The user\'s answer to question 5: ' , a6);
+}
+else{ alert(wrong);}
+
+/*a7 = prompt('Where have I been?');
+
+
+if(a7 === )
+{
+  alert('I love every form of art!');
+  correct++;
+  console.log('The user\'s answer to question 5: ' , a7);
+}
+else if(a7 === 'n' || a7 === 'no')
+{
+  alert('Wat. Why? How could anyone not... Um, I gottat go.');
+  incorrect++;
+  console.log('The user\'s answer to question 5: ' , a7);
+}
+else{ alert(wrong);} */
 
 console.log('correct: ' + correct);
 console.log('incorrect: ' + incorrect);

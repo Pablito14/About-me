@@ -2,7 +2,7 @@
 
 var a1, a2, a3, a4, a5, a6, /*a7,*/ wrong, correct, incorrect;
 
-wrong = ('Its a yes or no question, bruh. Type y or n');
+wrong = ('Its a yes or no question. Type y or n. You could even type yes or no. Just not what you did. ');
 correct = 0;
 incorrect = 0;
 console.log('Correct and incorrect will track the number of answers and their values. They should both start at 0');

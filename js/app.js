@@ -1,38 +1,39 @@
 'use strict';
 
-var a1, a2, a3, a4, a5, /*a6, a7,*/ wrong, correct, incorrect;
+var a1, a2, a3, a4, a5, /*a6, a7,*/ yaGoofed, correct, incorrect;
 //TEST
 
-wrong = ('Its a yes or no question. Type y or n. You could even type yes or no. Just not what you did. ');
+yaGoofed = ('Its a yes or no question. Type y or n. You could even type yes or no. Just not what you did.');
 correct = 0;
 incorrect = 0;
 console.log('Correct and incorrect will track the number of answers and their values. They should both start at 0');
 console.log('correct: ' + correct);
 console.log('incorrect: ' + incorrect);
+alert('Hey I am holding you against your will until you finish this about me minigame');
 
 function q1() {
-  a1 = prompt('HEY, are you a stressed out developer?!');
-  a1.toLowerCase();
+  a1 = prompt('Am I artistc?').toLowerCase();
+  console.log(a1);
 
   if(a1 === 'y' || a1 === 'yes')
   {
-    alert('Good, you should be. >:(');
-    correct++;
+    alert('Alas my dear friend, I have no ability or talent, but all the appreciation in the world for art');
+    incorrect++;
     console.log('The user\'s answer to question 1: ' , a1);
   }
   else if(a1 === 'n' || a1 === 'no')
   {
     alert('Shifu please teach me <3');
-    incorrect++;
+    correct++;
     console.log('The user\'s answer to question 1: ' , a1);
   }
-  else{ alert(wrong);}
+  else{ alert(yaGoofed);}
 }
 q1();
 
 function q2() {
-  a2 = prompt('Have you had any coding experiance?');
-  a2.toLowerCase();
+  a2 = prompt('Have you had any coding experiance?').toLowerCase();
+  console.log(a2);
 
   if(a2 === 'y'|| a2 === 'yes')
   {
@@ -46,14 +47,13 @@ function q2() {
     incorrect++;
     console.log('The user\'s answer to question 2: ' , a2);
   }
-  else{ alert(wrong);}
+  else{ alert(yaGoofed);}
 }
 q2();
 
 function q3() {
-  a3 = prompt('Are you scared to look dumb and ask for help?');
-  a3.toLowerCase();
-
+  a3 = prompt('Are you scared to look dumb and ask for help?').toLowerCase();
+  console.log(a3);
   if(a3 === 'y'|| a3 === 'yes')
   {
     alert('That is normal, I promise you I am right there with ya!');
@@ -66,13 +66,13 @@ function q3() {
     incorrect++;
     console.log('The user\'s answer to question 3: ' , a3);
   }
-  else{ alert(wrong);}
+  else{ alert(yaGoofed);}
 }
 q3();
 
 function q4() {
-  a4 = prompt('Are you getting enough rest?');
-  a4.toLowerCase();
+  a4 = prompt('Are you getting enough rest?').toLowerCase();
+  console.log(a4);
 
   if(a4 === 'y'|| a4 === 'yes')
   {
@@ -86,13 +86,13 @@ function q4() {
     correct++;
     console.log('The user\'s answer to question 4: ' , a4);
   }
-  else{ alert(wrong);}
+  else{ alert(yaGoofed);}
 }
 q4();
 
 function q5() {
-  a5 = prompt('Do you enjoy art?');
-  a5.toLowerCase();
+  a5 = prompt('Do you enjoy art?').toLowerCase();
+  console.log(a5);
 
   if(a5 === 'y'|| a5 === 'yes')
   {
@@ -106,50 +106,50 @@ function q5() {
     incorrect++;
     console.log('The user\'s answer to question 5: ' , a5);
   }
-  else{ alert(wrong);}
+  else{ alert(yaGoofed);}
 }
 q5();
 
-/*
-function q6() {
-  a6 = prompt('What is my favorite number? I\'ll give you a hint its from 1 to 100!');
+// /*
+// function q6() {
+//   a6 = prompt('What is my favorite number? I\'ll give you a hint its from 1 to 100!');
 
-  if(a6 === 60)
-  {
-    alert('Dammmmmmmmn, how\'d you guess it right?');
+//   if(a6 === 60)
+//   {
+//     alert('Dammmmmmmmn, how\'d you guess it right?');
 
-    console.log();
-  }
-  else if(a6 )
-  {
-    alert('Wat. Why? How could anyone not... Um, I gottat go.');
-    incorrect++;
-    console.log('The user\'s answer to question 6: ' , a6);
-  }
-  else{ alert(wrong);}
-}
-q6();
+//     console.log();
+//   }
+//   else if(a6 )
+//   {
+//     alert('Wat. Why? How could anyone not... Um, I gottat go.');
+//     incorrect++;
+//     console.log('The user\'s answer to question 6: ' , a6);
+//   }
+//   else{ alert(yaGoofed);}
+// }
+// q6();
 
-function q7() {
-  a7 = prompt('Where have I been?');
+// function q7() {
+//   a7 = prompt('Where have I been?');
 
-  if(a7 === )
-  {
-    alert('I love every form of art!');
-    correct++;
-    console.log('The user\'s answer to question 5: ' , a7);
-  }
-  else if(a7 === 'n' || a7 === 'no')
-  {
-    alert('Wat. Why? How could anyone not... Um, I gottat go.');
-    incorrect++;
-    console.log('The user\'s answer to question 5: ' , a7);
-  }
-  else{ alert(wrong);} 
-}
-q7();
+//   if(a7 === )
+//   {
+//     alert('I love every form of art!');
+//     correct++;
+//     console.log('The user\'s answer to question 5: ' , a7);
+//   }
+//   else if(a7 === 'n' || a7 === 'no')
+//   {
+//     alert('Wat. Why? How could anyone not... Um, I gottat go.');
+//     incorrect++;
+//     console.log('The user\'s answer to question 5: ' , a7);
+//   }
+//   else{ alert(yaGoofed);} 
+// }
+// q7();
 
-*/
+// */
 
-console.log('correct: ' + correct);
-console.log('incorrect: ' + incorrect);
+// console.log('correct: ' + correct);
+// console.log('incorrect: ' + incorrect);

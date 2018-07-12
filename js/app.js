@@ -1,6 +1,6 @@
 'use strict';
 
-var a1, a2, a3, a4, a5, a6, /*a7,*/ wrong, correct, incorrect;
+var a1, a2, a3, a4, a5, /*a6, a7,*/ wrong, correct, incorrect;
 
 wrong = ('Its a yes or no question, bruh. Type y or n');
 correct = 0;
@@ -129,21 +129,26 @@ function q6() {
 }
 q6();
 
-a7 = prompt('Where have I been?');
+function q7() {
+  a7 = prompt('Where have I been?');
 
-if(a7 === )
-{
-  alert('I love every form of art!');
-  correct++;
-  console.log('The user\'s answer to question 5: ' , a7);
+  if(a7 === )
+  {
+    alert('I love every form of art!');
+    correct++;
+    console.log('The user\'s answer to question 5: ' , a7);
+  }
+  else if(a7 === 'n' || a7 === 'no')
+  {
+    alert('Wat. Why? How could anyone not... Um, I gottat go.');
+    incorrect++;
+    console.log('The user\'s answer to question 5: ' , a7);
+  }
+  else{ alert(wrong);} 
 }
-else if(a7 === 'n' || a7 === 'no')
-{
-  alert('Wat. Why? How could anyone not... Um, I gottat go.');
-  incorrect++;
-  console.log('The user\'s answer to question 5: ' , a7);
-}
-else{ alert(wrong);} */
+q7();
+
+*/
 
 console.log('correct: ' + correct);
 console.log('incorrect: ' + incorrect);

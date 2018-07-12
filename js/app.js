@@ -49,22 +49,25 @@ function q2() {
 }
 q2();
 
-a3 = prompt('Are you scared to look dumb and ask for help?');
-a3.toLowerCase();
+function q3() {
+  a3 = prompt('Are you scared to look dumb and ask for help?');
+  a3.toLowerCase();
 
-if(a3 === 'y'|| a3 === 'yes')
-{
-  alert('That is normal, I promise you I am right there with ya!');
-  correct++;
-  console.log('The user\'s answer to question 3: ' , a3);
+  if(a3 === 'y'|| a3 === 'yes')
+  {
+    alert('That is normal, I promise you I am right there with ya!');
+    correct++;
+    console.log('The user\'s answer to question 3: ' , a3);
+  }
+  else if(a3 === 'n' || a3 === 'no')
+  {
+    alert('Well you are just exuberating confidence');
+    incorrect++;
+    console.log('The user\'s answer to question 3: ' , a3);
+  }
+  else{ alert(wrong);}
 }
-else if(a3 === 'n' || a3 === 'no')
-{
-  alert('Well you are just exuberating confidence');
-  incorrect++;
-  console.log('The user\'s answer to question 3: ' , a3);
-}
-else{ alert(wrong);}
+q3();
 
 a4 = prompt('Are you getting enough rest?');
 a4.toLowerCase();

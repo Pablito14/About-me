@@ -1,6 +1,6 @@
 'use strict';
 
-var a1, a2, a3, a4, a5, /*a6, a7,*/ yaGoofed, correct, incorrect;
+var a1, a2, a3, a4, a5, a6,/* a7,*/ yaGoofed, correct, incorrect;
 //TEST
 
 yaGoofed = ('Its a yes or no question. Type y or n. You could even type yes or no. Just not what you did.');
@@ -9,6 +9,7 @@ incorrect = 0;
 console.log('Correct and incorrect will track the number of answers and their values. They should both start at 0');
 console.log('correct: ' + correct);
 console.log('incorrect: ' + incorrect);
+
 alert('Hey I am holding you against your will until you finish this about me minigame');
 
 function q1() {
@@ -17,7 +18,7 @@ function q1() {
 
   if(a1 === 'y' || a1 === 'yes')
   {
-    alert('Alas my dear friend, I have no ability or talent, but all the appreciation in the world for art');
+    alert('My dear friend, I have no artistic ability or talent, but all the appreciation in the world for art.');
     incorrect++;
     console.log('The user\'s answer to question 1: ' , a1);
   }
@@ -110,25 +111,36 @@ function q5() {
 }
 q5();
 
-// /*
-// function q6() {
-//   a6 = prompt('What is my favorite number? I\'ll give you a hint its from 1 to 100!');
+function q6() {
+  var totAttempts = 4;
+  var rightAns = 60;
 
-//   if(a6 === 60)
-//   {
-//     alert('Dammmmmmmmn, how\'d you guess it right?');
+  a6 = prompt('What is my favorite number? I\'ll give you a hint its from 1 to 100!');
+  while(totAttempts > 0){
+    if(parseInt(a6) === rightAns)
+    {
+      alert('Dammmmmmmmn, how\'d you must be a cousin!');
+      correct++;
+      break;
+    }
+    else if(a6 > rightAns)
+    {
+      a6 = prompt('You are aiming too high');
+      totAttempts--;
+    }
+    else if(a6 < rightAns)
+    {
+      a6 = prompt('You are going too low!');
+      totAttempts--;
+    }
+    else{ a6 = prompt('You have to enter a number between 1 - 100!');}
+  }
+}
 
-//     console.log();
-//   }
-//   else if(a6 )
-//   {
-//     alert('Wat. Why? How could anyone not... Um, I gottat go.');
-//     incorrect++;
-//     console.log('The user\'s answer to question 6: ' , a6);
-//   }
-//   else{ alert(yaGoofed);}
-// }
-// q6();
+q6();
+
+
+/*
 
 // function q7() {
 //   a7 = prompt('Where have I been?');
@@ -149,7 +161,7 @@ q5();
 // }
 // q7();
 
-// */
+*/
 
-// console.log('correct: ' + correct);
-// console.log('incorrect: ' + incorrect);
+console.log('correct: ' + correct);
+console.log('incorrect: ' + incorrect);

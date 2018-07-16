@@ -1,5 +1,19 @@
 
-
+html { 
+    background-image: url("../img/seattlenightsky.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: 100%;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+ }
+ 
+#webpageHeader{
+    text-align: center
+}
 #header{
     color : rgb(252, 19, 2)
     

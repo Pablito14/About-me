@@ -110,6 +110,11 @@ function q5() {
 }
 q5();
 
+
+
+
+
+
 function q6() {
   var totAttempts = 4;
   var rightAns = 60;
@@ -117,8 +122,9 @@ function q6() {
   while(totAttempts > 1){
     if(parseInt(userAns6) === rightAns)
     {
-      alert('Dammmmmmmmn, how\'d you must be a cousin!');
+      alert('Dammmmmmmmn, how\'d you know?! You must be a cousin!');
       correct++;
+      totAttempts = 0;
       break;
     }
     else if(userAns6 > rightAns)
@@ -137,23 +143,43 @@ function q6() {
 
 q6();
 
+
+
 function q7() {
+
   var arrayOfHobbies = ['music','games','excercise', 'nature', 'food', 'cooking', 'exploring', 'culture', 'philosiphy', 'coffee', 'fashion', 'business'];
-  userAns7 = prompt('What are some of my hobbies?');
-  for(var i = 0; i < arrayOfHobbies.length(); i++){
-    if(userAns7 === arrayOfHobbies[i].toLowerCase )
+  var trysLeft = 6;
+  var correctness = false;
+
+
+  while (trysLeft > 0 && correctness === false)
+  {
+
+    var userAns7 = prompt('What are some things that I like to do?').toUpperCase();
+
+    if (arrayOfHobbies.includes(userAns7))
     {
-      alert('I love that!');
-      correct++;
+      correctness = true;
+      alert('You are right!');
+      alert('Here are all of the states I\'ve lived in!\n ' + arrayOfHobbies.join(','));
       break;
     }
-    else if(userAns7 === 'n' || userAns7 === 'no')
+    else
     {
-      alert('I don\t really enjoy that that');
+      trysLeft--;
+      alert('Wrong! Try again, ' + trysLeft + ' trys left');
     }
-    else{ alert(yaBrokedIt);}
+
   }
+
+  if (trysLeft === 0)
+  {
+    alert('You ran out of attempts!');
+    alert('Here is all of the things that I have interests in!\n ' + arrayOfHobbies.join(','));
+  }
+
 }
+
 q7();
 
 console.log('correct: ' + correct);

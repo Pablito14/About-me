@@ -155,7 +155,7 @@ function q7() {
   while (trysLeft > 0 && correctness === false)
   {
 
-    var userAns7 = prompt('What are some things that I like to do?').toUpperCase();
+    userAns7 = prompt('What are some things that I like to do?').toUpperCase();
 
     if (arrayOfHobbies.includes(userAns7))
     {

@@ -1,8 +1,8 @@
 'use strict';
 
-var userAns1, userAns2, userAns3, userAns4, userAns5, userAns6, userAns7, yaBrokedIt, correct, incorrect;
+var userAns1, userAns2, userAns3, userAns4, userAns5, userAns6, userAns7, broken, correct, incorrect;
 
-yaBrokedIt = ('Its a yes or no question. Type y or n. You could even type yes or no. Just not what you did.');
+broken = ('Its a yes or no question. Type y or n. You could even type yes or no. Just not what you did.');
 correct = 0;
 incorrect = 0;
 console.log('Correct and incorrect will track the number of answers and their values. They should both start at 0');
@@ -12,32 +12,34 @@ console.log('incorrect: ' + incorrect);
 alert('Hey I am holding you against your will until you finish this about me minigame');
 
 function q1() {
-  userAns1 = prompt('Am I artistc?').toLowerCase();
-  console.log(userAns1);
+  userAns1 = prompt('Am I an artistc person?').toLowerCase(); // ask the question through a prompt, and change their answer to lower case so I can compare to the correct answer without worrying about the casing
+  console.log('User answer for question 1 is: ' + userAns1); // created a console log to see the users answer for this question
 
-  if(userAns1 === 'y' || userAns1 === 'yes')
+  if(userAns1 === 'y' || userAns1 === 'yes') // If they answer with 'y' OR 'yes'
   {
-    alert('My dear friend, I have no artistic ability or talent, but all the appreciation in the world for art.');
-    incorrect++;
-    console.log('The user\'s answer to question 1: ' , userAns1);
+    alert('I\'ll give you half points for that, I am really creative and inspired but I have not developed anything into any artistic talent yet!'); // this alert message will appear
+    correct+= 0.5; // the *score* for the correct count will increase by 0.5
   }
   else if(userAns1 === 'n' || userAns1 === 'no')
   {
-    alert('Shifu please teach me <3');
-    correct++;
-    console.log('The user\'s answer to question 1: ' , userAns1);
+    alert('I\'ll give you half points for that, I am really creative and inspired but I have not developed anything into any artistic talent yet!');
+    correct+= 0.5;
   }
-  else{ alert(yaBrokedIt);}
+  else
+  {
+    alert(broken);
+    q1();
+  }
 }
 q1();
 
 function q2() {
-  userAns2 = prompt('Have you had any coding experiance?').toLowerCase();
-  console.log(userAns2);
+  userAns2 = prompt('Do you think that I have prior experiance to coding other than at the Code Fellows school?').toLowerCase();
+  console.log('User answer for question 2 is: ' + userAns2);
 
   if(userAns2 === 'y'|| userAns2 === 'yes')
   {
-    alert('Wowie, thats fantastic. I have some experiance in Java!');
+    alert('You are correct! I have some experience in Java that I picked up with Arizona State University in their Principles of Programming and Data Structures.');
     correct++;
     console.log('The user\'s answer to question 2: ' , userAns2);
   }
@@ -47,7 +49,11 @@ function q2() {
     incorrect++;
     console.log('The user\'s answer to question 2: ' , userAns2);
   }
-  else{ alert(yaBrokedIt);}
+  else
+  {
+    alert(broken);
+    q2();
+  }
 }
 q2();
 
@@ -66,7 +72,7 @@ function q3() {
     incorrect++;
     console.log('The user\'s answer to question 3: ' , userAns3);
   }
-  else{ alert(yaBrokedIt);}
+  else{ alert(broken);}
 }
 q3();
 
@@ -86,7 +92,7 @@ function q4() {
     correct++;
     console.log('The user\'s answer to question 4: ' , userAns4);
   }
-  else{ alert(yaBrokedIt);}
+  else{ alert(broken);}
 }
 q4();
 
@@ -106,7 +112,7 @@ function q5() {
     incorrect++;
     console.log('The user\'s answer to question 5: ' , userAns5);
   }
-  else{ alert(yaBrokedIt);}
+  else{ alert(broken);}
 }
 q5();
 

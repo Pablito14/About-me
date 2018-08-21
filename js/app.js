@@ -12,7 +12,7 @@ console.log('incorrect: ' + incorrect);
 alert('Hey I am holding you against your will until you finish this about me minigame');
 
 function q1() {
-  userAns1 = prompt('Am I an artistc person?').toLowerCase(); // ask the question through a prompt, and change their answer to lower case so I can compare to the correct answer without worrying about the casing
+  userAns1 = prompt('Am I an artistic person?').toLowerCase(); // ask the question through a prompt, and change their answer to lower case so I can compare to the correct answer without worrying about the casing
   console.log('User answer for question 1 is: ' + userAns1); // created a console log to see the users answer for this question
 
   if(userAns1 === 'y' || userAns1 === 'yes') // If they answer with 'y' OR 'yes'
@@ -25,10 +25,10 @@ function q1() {
     alert('I\'ll give you half points for that, I am really creative and inspired but I have not developed anything into any artistic talent yet!');
     correct+= 0.5;
   }
-  else
+  else // if the user's answer is anything else other than y/n or yes/no
   {
-    alert(broken);
-    q1();
+    alert(broken); // show the broken message in an alert box
+    q1(); // ask the question again
   }
 }
 q1();
@@ -39,15 +39,13 @@ function q2() {
 
   if(userAns2 === 'y'|| userAns2 === 'yes')
   {
-    alert('You are correct! I have some experience in Java that I picked up with Arizona State University in their Principles of Programming and Data Structures.');
+    alert('You are correct! I have some experience in Java that I picked up with Arizona State University in their Principles of Programming and Data Structures courses.');
     correct++;
-    console.log('The user\'s answer to question 2: ' , userAns2);
   }
   else if(userAns2 === 'n' || userAns2 === 'no')
   {
-    alert('Well prepare for a world of hurt then buddy.');
+    alert('Unfortunately you guessed incorrectly. I have some experience in Java that I picked up with Arizona State University in their Principles of Programming and Data Structures courses.');
     incorrect++;
-    console.log('The user\'s answer to question 2: ' , userAns2);
   }
   else
   {
@@ -58,68 +56,71 @@ function q2() {
 q2();
 
 function q3() {
-  userAns3 = prompt('Are you scared to look dumb and ask for help?').toLowerCase();
-  console.log(userAns3);
+  userAns3 = prompt('Do you think I have any tattoos?').toLowerCase();
+  console.log('User answer for question 3 is: ' + userAns3);
   if(userAns3 === 'y'|| userAns3 === 'yes')
   {
-    alert('That is normal, I promise you I am right there with ya!');
+    alert('That is correct! I currently have one tattoo that is a quote from the closing lines of the poem Invictus. It was written by William Ernest Henley in 1875 and the closing lines are: \n"I am the master of my fate\n I am the captain of my soul."');
     correct++;
-    console.log('The user\'s answer to question 3: ' , userAns3);
   }
   else if(userAns3 === 'n' || userAns3 === 'no')
   {
-    alert('Well you are just exuberating confidence');
+    alert('You guessed wrong :( \nI currently have one tattoo that is a quote from the closing lines of the poem Invictus. It was written by William Ernest Henley in 1875 and the closing lines are: \n"I am the master of my fate\n I am the captain of my soul."');
     incorrect++;
-    console.log('The user\'s answer to question 3: ' , userAns3);
   }
-  else{ alert(broken);}
+  else
+  {
+    alert(broken);
+    q3();
+  }
 }
 q3();
 
 function q4() {
-  userAns4 = prompt('Are you getting enough rest?').toLowerCase();
+  userAns4 = prompt('Can I make authentic Mexican food?').toLowerCase();
   console.log(userAns4);
 
   if(userAns4 === 'y'|| userAns4 === 'yes')
   {
-    alert('Very jealous :S');
-    incorrect++;
-    console.log('The user\'s answer to question 4: ' , userAns4);
+    alert('Correct! This is something that I actually enjoy to do regularly. I will usually cook with my family and we normally make traditional Mexican recipes.');
+    correct++;
   }
   else if(userAns4 === 'n' || userAns4 === 'no')
   {
-    alert('High five... and naps');
-    correct++;
-    console.log('The user\'s answer to question 4: ' , userAns4);
+    alert('Ouch, that is incorrect... I will usually cook with my family and we normally make traditional Mexican recipes.');
+    incorrect++;
   }
-  else{ alert(broken);}
+  else
+  {
+    alert(broken);
+    q4();
+  }
 }
 q4();
 
 function q5() {
-  userAns5 = prompt('Do you enjoy art?').toLowerCase();
+  userAns5 = prompt('Am I from kentucky?').toLowerCase();
   console.log(userAns5);
 
   if(userAns5 === 'y'|| userAns5 === 'yes')
   {
     alert('I love every form of art!');
     correct++;
-    console.log('The user\'s answer to question 5: ' , userAns5);
   }
   else if(userAns5 === 'n' || userAns5 === 'no')
   {
     alert('Wat. Why? How could anyone not... Um, I gottat go.');
     incorrect++;
-    console.log('The user\'s answer to question 5: ' , userAns5);
   }
-  else{ alert(broken);}
+  else
+  {
+    alert(broken);
+    q5();
+  }
 }
 q5();
 
-
-
-
-
+/******************************************************************************************************/
 
 function q6() {
   var totAttempts = 4;
